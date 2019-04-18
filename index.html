@@ -1,56 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head> 
-    <title>Startup</title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>John Lee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-content">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <button onclick="topFunction()" id="scrollbtn" title="Go to top">Top</button>
+    <main id="home">
+        <div class="bg"></div>
+        <h1>John Lee</h1>
+        <p>Web Developer in Kitchener, ON</p>
+    </main>
+    <div id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="projects-content">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-    <!-- Note that the below Bootstrap file is a specific version. If you grab the most
-    current from Bootstrap website, you will see the button grow transition being a lot faster
-    than in my video. Use whichever style sheet you like best! -->
-    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!-- My own stylesheet -->
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header class="startup text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-12 my-auto">
-            <h1 class="text-uppercase faded">
-              <strong>the biggest startup event of the year</strong>
-            </h1>
-            <hr>
-          </div>
-          <div class="col-lg-12 my-auto">
-            <!-- Begin Mailchimp Signup Form -->
-            
-            <style type="text/css">
-              #mc_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; }
-              /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-            </style>
-            <div id="mc_embed_signup">
-            <form action="https://somewebsite.us19.list-manage.com/subscribe/post?u=3dc9f2464394e34164a4fa219&amp;id=1fadf1d62d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
-              
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3dc9f2464394e34164a4fa219_1fadf1d62d" tabindex="-1" value=""></div>
-                <div class="clear"><input class="btn btn-primary btn-xl" type="submit" value="Find out more" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            <div class="project-box">
+                <div class="project-img placeholder"></div>
+                <div class="project-desc">
+                    <div class="project-title">Placeholder</div>
+                    <p>Placeholder for project</p>
+                    <div class="project-links">
+                        <a target="_blank" rel="noopener noreferrer" href="#"><span class="project-button">Website</span></a>
+                        <a target="_blank" rel="noopener noreferrer" href="#"></a><span class="project-button">Github</span></a>
+                    </div>
                 </div>
-            </form>
             </div>
-
-            <!--End mc_embed_signup-->
             
-          </div>
+                
+            <div class="project-box">
+                <div class="project-img smartbrain"></div>
+                <div class="project-desc">
+                    <div class="project-title">Smartbrain</div>
+                    <p>Learning project - Uses Clarifai api to detect faces in an image. 
+                        Users can register/login to use the service and manage their user profile.</p>
+                    <div class="project-links">
+                        <a target="_blank" rel="noopener noreferrer" href="https://smart-brain-johndev86.herokuapp.com/"><span class="project-button">Website</span></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/johndev86/smartbrain"><span class="project-button">Github</span></a>
+                    </div>
+                </div>
+            </div>
+            
+                
+            <div class="project-box">
+                <div class="project-img robofriends"></div>
+                <div class="project-desc">
+                    <div class="project-title">Robofriends</div>
+                    <p>Learning project - </p>
+                    <div class="project-links">
+                        <a target="_blank" rel="noopener noreferrer" href="https://johndev86.github.io/robofriends/"><span class="project-button">Website</span></a>
+                        <a  target="_blank" rel="noopener noreferrer" href="https://github.com/johndev86/robofriends"><span class="project-button">Github</span></a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </header>
-
-  </body>
-
+    </div>
+    <div id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <form class="simple-form" method="POST" action="https://formspree.io/johnlee86@gmail.com">
+            <input required type="email" name="email" placeholder="Your email">
+            <textarea rows=5 required name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send Email</button>
+        </form> 
+    </div>
+    <footer>
+        <div class="footer-col">
+            <span>Visit my - </span><a href="https://github.com/johndev86"><img src="img/GitHub_Logo_White.png" alt="Github"></a>
+        </div>
+        <div class="copyright" id="copyright"></div>
+    </footer>
+</body>
 </html>

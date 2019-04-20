@@ -60,7 +60,7 @@ nav a:hover {
 /* Main */
 
 main .bg {
-    background-image: url(img/main_bg.JPG);
+    background-image: url(img/main_bg.jpg);
     background-size: cover;
     content: "";
     display: block;
@@ -133,15 +133,15 @@ main h1 {
 }
 
 .robofriends {
-    background-image: url(img/robofriends.jpg);
+    background-image: url(img/robofriends.png);
 }
 
 .smartbrain {
-    background-image: url(img/smartbrain.jpg);
+    background-image: url(img/smartbrain.png);
 }
 
 .placeholder {
-    background-image: url(img/placeholder.jpg);
+    background-image: url(img/placeholder.png);
 }
 
 .project-desc {

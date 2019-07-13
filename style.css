@@ -95,61 +95,38 @@ main h1 {
 
 
 .projects-content {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin-left: 10px;
     margin-right: 10px;
 }
 
 .project-box {
-    display: flex;
-    align-items: start;
-    justify-content: space-around;
-    height: 300px;
-    position: relative;
-    
-}
-
-.project-box:hover .project-img{
-    opacity: 0.05;
-}
-
-.project-box:hover .project-desc{
-    visibility: visible;
-}
-
-.project-img {
-    background-size: cover;
-    background-position: center;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 300px;
+    margin: 20px;  
     border-radius: 10px;
     border: 2px solid grey;
 }
 
-.robofriends {
-    background-image: url(img/robofriends.png);
+.project-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
 }
 
-.smartbrain {
-    background-image: url(img/smartbrain.png);
+@media only screen and (max-width: 720px) {
+    .project-box {
+        grid-template-columns: 100%;
+    }
+
+    .project-img img {
+        border-radius: 10px 10px 0px 0px;
+    }
 }
 
-.scheduler {
-    background-image: url(img/scheduler.png);
-}
 
 .project-desc {
-    z-index: 1;
-    visibility: hidden;
     height: 100%;
-    width: 100%;
 }
 
 .project-desc p {
@@ -161,18 +138,14 @@ main h1 {
 .project-title {
     display: inline-block;
     font-size: 1.5rem;
+    font-weight: 700;
     padding: 5px;
-    background-color: black;
-    border-radius: 10px;
     margin: 10px;
-    color: white;
 }
 
 .project-links {
     bottom: 15px;
     width: 100%;
-    position: absolute;
-    clear: both;
 }
 
 .project-button {
@@ -194,7 +167,7 @@ main h1 {
 /* Contact form */
 
 .contact-section {
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;

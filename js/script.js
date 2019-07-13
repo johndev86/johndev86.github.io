@@ -17,6 +17,23 @@ window.onscroll = function () {
             scrollBtn.classList.remove('scrolled-show-btn');
         }
     }
+
+    //Fade in/out project boxes
+    var projectBoxes = document.querySelectorAll('.project-box');
+
+    var windowBottom = window.scrollY + window.innerHeight;
+    projectBoxes.forEach(function(e) {
+        /* Check the location of each desired element */
+        var objectBottom = e.offsetTop;
+        
+        /* If the element is within bounds of the window, fade it in */
+        if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+            e.classList.add('fadeInRight');
+        } else {
+            e.classList.remove('fadeInRight');
+        }
+    });
+
 };
 
 window.onload = function () {
